@@ -8,6 +8,7 @@ body {
   height: 100%;
   margin: 0;
   width: 100%;
+  box-sizing: border-box;
 }
 
 li {
@@ -155,10 +156,12 @@ main {
 
   aside {
     min-width: 92%;
+    padding: 17px;
   }
 
   main {
     min-width: 92%;
+    padding: 17px;
   }
 
   .a-contact {
