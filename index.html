@@ -2,17 +2,107 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta viewport="">
+    <link rel="stylesheet" type="text/css" href="./main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Raleway:400,700" rel="stylesheet">
     <title>Laura Turk - Front End Developer</title>
   </head>
   <body>
     <header>
       <h1>Laura Turk</h1>
       <h2>Front End Developer</h2>
+      <ul class="contact-list">
+        <a href="https://github.com/lauraturk" target="_blank">
+          <li class="a-contact">
+            <img src="./assets/github-icon.svg"/>
+            <span class="a-contact-info">lauraturk</span>
+          </li>
+        </a>
+        <a href="https://www.linkedin.com/in/laura-turk-denver/" target="_blank">
+          <li class="a-contact">
+            <img src="./assets/linkedin-icon.svg"/>
+            <span class="a-contact-info">Laura Turk</span>
+          </li>
+        </a>
+        <a href="https://twitter.com/LauraTheTurk" target="_blank">
+          <li class="a-contact">
+            <img src="./assets/twitter-icon.svg"/>
+            <span class="a-contact-info">@LauraTheTurk</span>
+          </li>
+        </a>
+      </ul>
     </header>
     <aside>
-      <article class="side-bar-block" id="skills">
-        <h3>Skills</h3>
+      <article class="side-bar-block" id="projects">
+        <h3>Projects</h3>
+        <h4>Flash Lingua</h4>
+        <ul class="project-list">
+          <a class="a-project-list"
+             href="https://flash-lingua.herokuapp.com/search"
+             target="_blank">
+             <li>Production Site</li>
+          </a>
+          <a class="a-project-list"
+             href="https://github.com/lauraturk/lt-flash-cards-express"
+             target="_blank">
+             <li>Repository</li>
+          </a>
+          <li class="project-details">Flash Lingua is a React.js/Redux.js app
+            harnessing the power of Google Translate, Google Vision, and the
+            Oxford English Dictionary to capture translations/definitions and
+            save them as flashcards in custom flashcard decks for future study.
+            This app was built as a personal project.</li>
+          <li>Testing: Enzyme, Jest, FetchMock</li>
+        </ul>
+        <h4>Movie Tracker</h4>
+        <ul class="project-list">
+          <a class="a-project-list"
+             href="https://themovietracker.herokuapp.com/"
+             target="_blank">
+             <li>Production Site</li>
+          </a>
+          <a class="a-project-list"
+             href="https://github.com/lauraturk/movie-tracker"
+             target="_blank">
+             <li>Repository</li>
+          </a>
+          <li class="project-details">Movie Tracker is a React.js/Redux.js app
+            built with router and a Node.js/express back-end that pulls movie
+            details from The Movie DB. The app allows users to browse recently
+            released movies and favorite individual movies. The favorite movies
+            are saved to the user's dashboard.
+            Movie Tracker was assigned as an introductory project for Redux and
+            React-Router. It was completed in seven days by a group of three members.
+          </li>
+          <li>Testing: Enzyme, Jest, FetchMock</li>
+        </ul>
+      </article>
+      <article class="side-bar-block" id="education">
+        <h3>Education</h3>
+          <h4>Colorado State University</h4>
+          <ul>
+            <li>B.A. English Language</li>
+            <li>B.A. Spanish Language and Literature</li>
+          </ul>
+
+      </article>
+      <article>
+        <h3>Contact</h3>
         <ul>
+          <li>303-883-6154</li>
+          <li>laura.lk.turk@gmail.com</li>
+        </ul>
+      </article>
+    </aside>
+    <main>
+      <section class="profile">
+        <p>I am a detailed, dedicated, life-long learner passionate about
+          creating social good through my work. I came to programming by way of
+          teaching digital literacy and 21st Century Skills in public libraries,
+          and have honed by ability to lead, collaborate and communicate with
+          people from all walks of life.</p>
+        <h3>Skills</h3>
+        <ul class="skills-list">
           <li>Crucial Conversations</li>
           <li>CSS3/HTML5</li>
           <li>WAI/ARIA</li>
@@ -23,56 +113,43 @@
           <li>ES 2015</li>
           <li>more...</li>
         </ul>
-      </article>
-      <article class="side-bar-block" id="education">
-        <h3>Education</h3>
+      </section>
+      <section>
+        <h3>Experience</h3>
+        <article>
+          <h4>Front End Engineering Student</h4>
+          <h5>Turing School of Software and Design</h5>
+            <ul>
+              <li>Led an extra-curriculur Civic Tech student group</li>
+              <li>Facilitated various Civic Tech focused classes</li>
+              <li>Coordinated an asset-mapping group project:
+                <a href="https://github.com/lauraturk/food4all" target="_blank">Food4All Repository</a>
+              </li>
+              <li>Volunteered as Teaching Assistant for Try Turing Weekend</li>
+            <ul>
+        </article>
+        <article>
+          <h4>S.T.E.M. Para-Librarian</h4>
+          <h5>Denver Public Library | 2013-2017</h5>
+          <ul>
+            <li>Evaluated and designed research-driven user experiences as
+              member of cross-departmental strategic initiative team</li>
+            <li>Taught hundreds of technology classes, using iterative design
+              principles</li>
+            <li>Developed engaging and educational S.T.E.M. events for all ages</li>
+          </ul>
+        </article>
+        <article>
+          <h4>Para-Librarian</h4>
+          <h5>Arapahoe Library District | 2010-2013</h5>
+        </article>
+      </section>
+      <section>
+        <h3>Achievements</h3>
         <ul>
-          <li>
-            <h4>Turing School of Software and Design</h4>
-            <p>Front End Engineering</p>
-            <p>2017</p>
-          </li>
-          <li>
-            <h4>Colorado State University</h4>
-            <p>B.A. English Language</p>
-            <p>B.A. Spanish Language and Literature</p>
-            <p>2006 - 2009</p>
-          </li>
+          <li>Denver Public Library Leadership Academy Graduate</li>
+          <li>Presented at local and national conferences</li>
         </ul>
-      </article>
-      <article>
-        <p>303-883-6154</p>
-        <p>laura.lk.turk@gmail.com</p>
-        <p>github.com/lauraturk</p>
-        <p>Linkedin: Laura Turk</p>
-        <p>Twitter: @lauratheturk</p>
-      </article>
-    </aside>
-    <main>
-      <section>
-        <h3>Profile</h3>
-        <p></p>
-      </section>
-      <section>
-        <h3>Projects</h3>
-        <a href="">Flash Lingua</a>
-        <a href="">Movie Tracker</a>
-      </section>
-      <section>
-        <h3>Work Experience</h3>
-        <h4>S.T.E.M. Para-Librarian</h4>
-        <h4>Denver Public Library | 2013-2017</h4>
-        <ul>
-          <li>Evaluated and designed research-driven user experiences as member of cross-departmental strategic initiative team</li>
-          <li>Taught hundreds of technology classes, using iterative design principles</li>
-          <li>Developed engaging and educational S.T.E.M. events for all ages</li>
-        </ul>
-        <h4>Para-Librarian</h4>
-        <h4>Arapahoe Library District | 2010-2013</h4>
-      </section>
-      <section>
-        <h3>Achievements and Interests</h3>
-        <p></p>
       </section>
     </main>
 
