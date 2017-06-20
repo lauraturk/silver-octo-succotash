@@ -1,11 +1,13 @@
 /* global settings */
+
 body {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  font-family: 'Raleway', sans-serif;
+  background-color: #F6F6F6;
   display: flex;
   flex-wrap: wrap;
+  font-family: 'Raleway', sans-serif;
+  height: 100%;
+  margin: 0;
+  width: 100%;
 }
 
 li {
@@ -44,45 +46,53 @@ h5 {
 
 /* header */
 header {
-  background-color: grey;
-  color: black;
+  background-color: #334C4C;
+  color: #AABD8C;
   text-align: center;
-  width: 100%;
+  width: 105%;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 h1 {
   font-family: 'Bungee Shade', cursive;
   margin: 0 auto;
   padding-top: 20px;
-  font-size: 64px;
+  font-size: 52px;
 }
 
+/* side-bar information */
 .contact-list {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  margin: 5px auto;
-  max-width: 500px;
+  justify-content: flex-end;
+  margin: 16px 0;
+  width: 100%;
 }
 
 .a-contact {
-  min-width: 145px;
+  max-width: 145px;
+  margin: 10px;
 }
 
 .a-contact-info {
   display: none;
+  font-size: 90%;
+  vertical-align: 50%;
 }
 
 .a-contact:hover .a-contact-info {
   display: inline;
-  vertical-align: 50%;
 }
 
-/* side-bar information */
 aside {
-  background-color: green;
-  height: 100%;
+  background-color: #CDA6C2;
   padding: 10px 30px;
+  position: relative;
+  bottom: 0;
+  left: 0;
   text-align: right;
   width: 30%;
 }
@@ -94,7 +104,17 @@ aside {
 }
 
 .a-project-list{
-  width: 50%;
+  box-shadow: 1px 1px 1px;
+  margin-bottom: 10px;
+  padding: 15px 15px;
+  border-radius: 2px;
+}
+
+.a-project-list:hover{
+  margin-bottom: 10px;
+  padding: 15px 15px;
+  border-radius: 2px;
+  background-color: #F6F6F6;
 }
 
 .project-details {
@@ -107,6 +127,7 @@ main {
   width: 60%;
   padding: 10px;
   padding-left: 20px;
+
 }
 
 .skills-list {
@@ -118,4 +139,34 @@ main {
 .skills-list li {
   list-style-type: disc;
   min-width: 230px;
+}
+
+@media print {
+  .a-contact-info {
+    display: block;
+    margin-top: 5px;
+  }
+}
+
+@media(max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  aside {
+    min-width: 92%;
+  }
+
+  main {
+    min-width: 92%;
+  }
+
+  .a-contact {
+    width: 33%;
+    text-align: center;
+  }
+
+  aside img {
+    display: inline-block;
+  }
 }
