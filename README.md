@@ -2,4 +2,6 @@
 
 ### Laura Turk 
 
-#### resume updated June 2017
+#### resume updated June 
+
+[Live Site]( https://lauraturk.github.io/silver-octo-succotash/)
